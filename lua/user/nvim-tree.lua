@@ -159,9 +159,5 @@ nvim_tree.setup {
   trash = {
     cmd = "trash",
     require_confirm = true,
-<<<<<<< HEAD
-  },
-=======
   }
->>>>>>> 975e8f4b7f10481268de58caf5f3e9d467422eb5
 }
