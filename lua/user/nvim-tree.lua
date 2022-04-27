@@ -21,9 +21,8 @@ vim.g.nvim_tree_icons = {
   },
 }
 
--- begin test area
 
--- vimrc
+-- TEMPORARY HACK
 vim.g["nvim_tree_git_hl"] = 1 --0 by default, will enable file highlight for git attributes (can be used without the icons).
 vim.g["nvim_tree_highlight_opened_files"] = 1 --0 by default, will enable folder and file icon highlight for opened files/directories.
 vim.g["nvim_tree_root_folder_modifier"] = ':~' --This is the default. See :help filename-modifiers for more options
@@ -89,8 +88,7 @@ vim.cmd [[set termguicolors]] -- this variable must be enabled for colors to be 
 -- a list of groups can be found at `:help nvim_tree_highlight`
 vim.cmd [[highlight NvimTreeFolderIcon guibg=blue]]
 
--- end test area
-
+-- END TEMPORARY HACK
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
@@ -161,5 +159,9 @@ nvim_tree.setup {
   trash = {
     cmd = "trash",
     require_confirm = true,
+<<<<<<< HEAD
   },
+=======
+  }
+>>>>>>> 975e8f4b7f10481268de58caf5f3e9d467422eb5
 }
