@@ -20,5 +20,5 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 
-vim.cmd("colorscheme shine")
+vim.cmd("colorscheme darkplus")
 
