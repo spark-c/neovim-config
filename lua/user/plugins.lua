@@ -89,6 +89,8 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+
+  -- Collin's additions
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use {
         "lewis6991/spellsitter.nvim",
@@ -96,6 +98,7 @@ return packer.startup(function(use)
             require('spellsitter').setup()
         end
     }
+  use "justinmk/vim-sneak"
 
       
   -- Git
